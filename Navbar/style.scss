@@ -1,0 +1,47 @@
+#navbar {
+    background-color: $Color60 !important;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    color: $Color10;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-btn:hover {
+    transition: .2s ease-in-out;
+    color: $Color30;
+}
+
+.search-input {
+    background-color: transparent;
+    border: 2px solid $Color30;
+    color: $Color10;
+}
+
+.search-input:focus {
+    background-color: transparent;
+    border: 2px solid $Color30;
+    box-shadow: none;
+    color: $Color10;
+}
+
+.cart {
+    color: $Color10 !important;
+}
+
+.cart:hover {
+    color: $Color30 !important;
+}
+
+.nav-bottom {
+    height: 5vh;
+    background-color: $Color30;
+}
+
+#bot-link {
+    color: $Color10 ;
+}

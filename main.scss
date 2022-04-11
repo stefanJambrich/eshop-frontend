@@ -1,0 +1,10 @@
+$Color60: black;
+$Color30: #5941F2;
+$Color10: white;
+
+@import "~bootstrap/scss/bootstrap";
+@import "Navbar/style.scss";
+
+body {
+    background-color: #222529;
+}
