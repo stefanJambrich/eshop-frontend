@@ -10,7 +10,7 @@ const NavbarMain = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id="navbar">
                 <Container>
                     <Navbar.Brand href="#home">SoyGamer</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => { setCollapse(!collapse) }} />
