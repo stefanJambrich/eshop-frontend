@@ -1,0 +1,36 @@
+#games-list-title {
+    margin-left: 4vw;
+    margin-top: 10px;
+    color: $Color10;
+    width: auto;
+    height: auto;
+}
+
+#games-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    #game {
+        border: 2px solid $Color30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 0 5px 0 $Color30;
+        border-radius: 5px;
+        background-color: $Color60;
+
+        img {
+            width: 12em;
+            height: 20em;
+            padding-right: 10px;
+        }
+    }
+}
+
+#content {
+    color: $Color10;
+}

@@ -1,0 +1,31 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: $Color60;
+    
+    #address, #contacts {
+        margin: 20px;
+        margin-left: 10em;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+
+        h3 {
+            color: $Color30;
+            width: fit-content;
+            margin-left: 32px;
+            text-decoration: underline;
+        }
+
+        ul {
+            color: $Color10;
+            list-style: none;
+        }
+    }
+
+    #contacts {
+        width: 12vw;
+        margin-left: 5em;
+    }
+}
