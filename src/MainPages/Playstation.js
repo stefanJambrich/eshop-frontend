@@ -1,8 +1,8 @@
+import ProductsPage from "../ProductsPage/ProductsPage";
+
 const Playstation = () => {
     return (
-        <div>
-            playstation
-        </div>
+        <ProductsPage title={"Hry na Playstation"} address={"playstation"} />
     );
 }
  

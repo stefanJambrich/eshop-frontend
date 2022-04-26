@@ -1,0 +1,45 @@
+#wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 15px;
+
+    #products-title {
+        color: $Color10;
+    }
+
+    #game-list {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #game {
+            display: flex;
+            flex-direction: column;
+            background-color: $Color60;
+            width: 16em;
+            height: fit-content;
+            margin: 10px;
+            padding: 12px;
+            box-shadow: 0 0 2px 0 $Color30;
+            border-radius: 5px;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            img {
+                width: 15em;
+                height: 19em;
+                padding-right: 10px;
+            }
+        }
+    }
+}

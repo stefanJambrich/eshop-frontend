@@ -1,14 +1,14 @@
 #footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: $Color60;
     
     #address, #contacts {
         margin: 20px;
-        margin-left: 10em;
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: 14em;
         height: fit-content;
 
         h3 {
@@ -21,10 +21,5 @@
             color: $Color10;
             list-style: none;
         }
-    }
-
-    #contacts {
-        width: 14vw;
-        margin-left: 5em;
     }
 }
