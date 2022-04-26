@@ -12,7 +12,7 @@ const NavbarMain = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id="navbar">
                 <Container>
-                    <Navbar.Brand>SoyGamer</Navbar.Brand>
+                    <Navbar.Brand href="/">SoyGamer</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => { setCollapse(!collapse) }} />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

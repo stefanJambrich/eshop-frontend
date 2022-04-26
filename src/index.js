@@ -6,6 +6,12 @@ import CarouselMain from './Carousel/CarouselMain';
 import { Container, Row } from 'react-bootstrap';
 import RecentGamesList from './RecentGames/RecentGamesList';
 import Footer from './Footer/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './MainPages/Home';
+import Playstation from './MainPages/Playstation';
+import Xbox from './MainPages/Xbox';
+import PC from './MainPages/PC';
+import Nintendo from './MainPages/Nintendo';
 
 const App = () => {
   return (
@@ -14,12 +20,13 @@ const App = () => {
         <Row>
           <NavbarMain />
         </Row>
-        <Row>
-          <CarouselMain />
-        </Row>
-        <Row>
-          <RecentGamesList />
-        </Row>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/playstation' element={<Playstation />} />
+          <Route path='/xbox' element={<Xbox />} />
+          <Route path='/pc' element={<PC />} />
+          <Route path='/nintendo' element={<Nintendo />} />
+        </Routes>
         <Row>
           <Footer />
         </Row>
@@ -28,4 +35,9 @@ const App = () => {
   );
 }
 
-ReactDOM.render(<App /> , document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
