@@ -1,0 +1,117 @@
+#wrapper-cart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    
+    h2 {
+        color: $Color10;
+        border-bottom: 4px solid $Color30;
+        width: 10em;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #price-wrapper {
+        width: 70vw;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        #price {
+            color: $Color10;
+            font-size: 30px;
+            border-bottom: 4px solid $Color30;
+            width: fit-content;
+        }
+    }
+    
+    #game {
+        border: 2px solid $Color30;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 0 $Color30;
+        margin: 7px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        height: 10em;
+        align-items: center;
+        padding: 5px;
+        width: 70vw;
+        background-color: $Color60;
+
+        #content {
+            margin-left: 10px;
+
+            #btn-remove {
+                background-color: $Color60;
+                border-radius: 5px;
+                color: $Color30;
+                font-size: 15px;
+                border: 1px solid $Color30;
+            }
+    
+            #btn-remove:hover {
+                background-color: $Color30;
+                color: $Color60;
+                border-color: $Color30;
+                transition: .3s ease-in-out;
+                box-shadow: none;
+            }
+        }
+
+        #content > p {
+            height: 10px;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 6em;
+        height: 9em;
+    }
+
+    #cart-form-wrapper {
+        color: $Color10;
+        margin-top: 10px;
+
+        ul {
+            list-style-type: none;
+            
+            li {
+                background-color: $Color60;
+                border-radius: 5px;
+                cursor: pointer;
+                user-select: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border: 2px solid $Color30;
+                padding: 10px;
+                width: 40vmax;
+            }
+        }
+
+        #form, #form-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #form-wrapper {
+            padding: 10px;
+            border: 2px solid $Color30;
+            border-radius: 5px;
+            background-color: $Color60;
+            width: 33vmax;
+            flex-direction: column;
+            
+            #input {
+                width: 30vmax;
+            }
+        }
+    }
+}

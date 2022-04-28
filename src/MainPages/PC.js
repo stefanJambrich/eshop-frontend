@@ -1,8 +1,8 @@
+import ProductsPage from "../ProductsPage/ProductsPage";
+
 const PC = () => {
     return (
-        <div>
-            PC
-        </div>
+        <ProductsPage title={"Hry na PC"} address={"pc"} />
     );
 }
  

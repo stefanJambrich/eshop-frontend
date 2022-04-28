@@ -3,6 +3,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: $Color60;
+    border-top: 5px solid $Color30;
+    margin-top: 20px;
     
     #address, #contacts {
         margin: 20px;

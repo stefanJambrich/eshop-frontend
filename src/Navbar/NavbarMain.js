@@ -17,21 +17,8 @@ const NavbarMain = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         </Nav>
-                        <Nav className="me-auto">
-                            <Form className="d-flex">
-                                <FormControl
-                                    type="search"
-                                    placeholder="Hledat"
-                                    className="me-2 search-input"
-                                    aria-label="Search"
-                                    htmlSize={50}
-                                />
-                                <Button bsPrefix="search-btn">
-                                    <AiOutlineSearch />
-                                </Button>
-                            </Form></Nav>
                         <Nav>
-                            <Nav.Link href="" className="cart"><FiShoppingCart />  Košík</Nav.Link>
+                            <Nav.Link href="/cart" className="cart"><FiShoppingCart />  Košík</Nav.Link>
                         </Nav>
                         {collapse && <NavBotResp />}
                     </Navbar.Collapse>

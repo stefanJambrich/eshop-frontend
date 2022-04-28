@@ -1,8 +1,8 @@
+import ProductsPage from "../ProductsPage/ProductsPage";
+
 const Xbox = () => {
     return (
-        <div>
-            xbox
-        </div>
+        <ProductsPage title={"Hry na Xbox"} address={"XBOX"} />
     );
 }
  

@@ -31,6 +31,23 @@
             border-radius: 5px;
             text-align: center;
 
+            #btn-add {
+                background-color: $Color60;
+                border-radius: 5px;
+                box-shadow: 0 0 2px 0 $Color30;
+                color: $Color30;
+                font-size: 20px;
+                border: 1px solid $Color30;
+            }
+    
+            #btn-add:hover {
+                background-color: $Color30;
+                color: $Color60;
+                border-color: $Color30;
+                transition: .3s ease-in-out;
+                box-shadow: none;
+            }
+
             h1 {
                 font-size: 30px;
             }
@@ -40,6 +57,16 @@
                 height: 19em;
                 padding-right: 10px;
             }
+        }
+    }
+
+    #pagination {      
+        width: fit-content;
+        height: fit-content;
+        &-item {
+            border: 1px solid $Color30;
+            background-color: $Color60;
+            color: $Color30;
         }
     }
 }

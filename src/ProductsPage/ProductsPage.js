@@ -9,7 +9,7 @@ const ProductsPage = (props) => {
     let { page } = useParams();
 
     useEffect(() => {
-        axios.get('http://localhost:3001/playstation').then(res => {
+        axios.get(`http://localhost:3001/${props.address}`).then(res => {
             setGames(res.data);
         });
     }, []);
@@ -19,15 +19,15 @@ const ProductsPage = (props) => {
             <h2 id="products-title">{props.title}</h2>
             <div id="game-list">
                 {games.slice(10 * (page - 1), 10 * page).map((game) => (
-                    <RecentGame game={game} key={game.id}/>
+                    <RecentGame game={game} address={props.address} key={game.id}/>
                 ))}
             </div>
-            <Pagination>
+            <Pagination id="pagination">
                     {
                         [...Array(Math.ceil(games.length / 10)).keys()].map((num) => {
                             num++;
                             return (
-                                    <Pagination.Item active={page === num} href={`/${props.address}/${num}`}>
+                                    <Pagination.Item id="pagination-item" active={page === num} href={`/${props.address}/${num}`}>
                                         {num}
                                     </Pagination.Item>
                             );

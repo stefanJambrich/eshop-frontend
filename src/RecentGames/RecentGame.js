@@ -3,9 +3,9 @@ import axios from "axios";
 const RecentGame = (props) => {
     const imagePath = `http://localhost:3001/${props.game.img}`
 
-    const handleAddToCart = (itemName) => {
-        axios.post('http://localhost:3001/playstation', {
-            name: itemName,
+    const handleAddToCart = (itemId) => {
+        axios.post(`http://localhost:3001/${props.address}`, {
+            itemId: itemId,
             cartId: localStorage.getItem('cartId')
         })
     }
@@ -18,7 +18,7 @@ const RecentGame = (props) => {
                 <p>Žánry: {props.game.genre}</p>
                 <p>{props.game.description}</p>
                 <p>{props.game.price}Kč</p>
-                <button onClick={handleAddToCart.bind(this, props.game.name)}>Přidat do košíku</button>
+                <button id="btn-add" onClick={handleAddToCart.bind(this, props.game._id)}>Přidat do košíku</button>
             </div>
         </div>
     );

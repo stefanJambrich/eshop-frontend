@@ -11,6 +11,8 @@ import Xbox from './MainPages/Xbox';
 import PC from './MainPages/PC';
 import Nintendo from './MainPages/Nintendo';
 import axios from 'axios';
+import Cart from './Cart/Cart';
+import CartFinished from './Cart/CartFinished';
 
 const App = () => {
   useEffect(() => {
@@ -19,7 +21,6 @@ const App = () => {
         localStorage.setItem('cartId', res.data);
       });
     }
-    console.log(localStorage.getItem('cartId'))
   }, []);
 
   return (
@@ -34,6 +35,8 @@ const App = () => {
           <Route path='/xbox/:page' element={<Xbox />} />
           <Route path='/pc/:page' element={<PC />} />
           <Route path='/nintendo/:page' element={<Nintendo />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/cart/ordered' element={<CartFinished />} />
         </Routes>
         <Row>
           <Footer />
