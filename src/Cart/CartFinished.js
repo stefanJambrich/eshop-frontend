@@ -1,7 +1,7 @@
 const CartFinished = () => {
     return (
-        <div>
-            Succsessful
+        <div id="sus-wrapper">
+            <h1>Objednávka úspěšně odeslána</h1>
         </div>
     );
 }

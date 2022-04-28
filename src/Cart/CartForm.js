@@ -64,7 +64,7 @@ const CartForm = (props) => {
                         </Form.Text>
                     </Form.Group>
                     
-                    <Button onClick={handleClearCart.bind(this)}>Odeslat objednávku</Button>
+                    <Button onClick={handleClearCart.bind(this)} variant="success">Odeslat objednávku</Button>
                 </Form>
             </div>
         </div>

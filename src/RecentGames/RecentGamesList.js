@@ -16,7 +16,7 @@ const RecentGamesList = () => {
             <h2 id="games-list-title">Nejpopulářnější hry: </h2>
             <div id="games-list">
                 {games.map((game) => (
-                    <RecentGame game={game} />
+                    <RecentGame game={game} renderButton={true} />
                 ))}
             </div>
         </>

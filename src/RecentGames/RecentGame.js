@@ -10,6 +10,12 @@ const RecentGame = (props) => {
         })
     }
 
+    const renderButton = () => {
+        if (!props.renderButton) {
+            return <button id="btn-add" onClick={handleAddToCart.bind(this, props.game._id)}>Přidat do košíku</button>
+        }
+    }
+
     return (
         <div id="game">
             <img src={imagePath}/>
@@ -18,10 +24,10 @@ const RecentGame = (props) => {
                 <p>Žánry: {props.game.genre}</p>
                 <p>{props.game.description}</p>
                 <p>{props.game.price}Kč</p>
-                <button id="btn-add" onClick={handleAddToCart.bind(this, props.game._id)}>Přidat do košíku</button>
+                {renderButton()}
             </div>
         </div>
     );
 }
- 
+
 export default RecentGame;
