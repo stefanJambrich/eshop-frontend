@@ -21,9 +21,9 @@ const RecentGame = (props) => {
             <img src={imagePath}/>
             <div id="content">
                 <h1>{props.game.name}</h1>
-                <p>Žánry: {props.game.genre}</p>
-                <p>{props.game.description}</p>
-                <p>{props.game.price}Kč</p>
+                <p><strong>Žánry:</strong> {props.game.genre}</p>
+                <p><strong>Popisek:</strong> {props.game.description}</p>
+                <p><strong>Cena:</strong> {props.game.price}Kč</p>
                 {renderButton()}
             </div>
         </div>
